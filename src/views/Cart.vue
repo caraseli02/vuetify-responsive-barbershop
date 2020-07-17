@@ -16,6 +16,9 @@ import ProductList from '@/components/cart/ProductList.vue'
 import CheckoutBox from '@/components/cart/CheckoutBox.vue'
 
 export default {
+  metaInfo: {
+    title: 'Cart'
+  },
   components: {
     ProductList,
     CheckoutBox

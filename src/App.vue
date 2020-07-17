@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <TopNav />
+    <TopNav/>
     <v-content>
       <router-view></router-view>
     </v-content>
@@ -25,19 +25,33 @@
 </template>
 
 <script>
-import { mapState, mapMutations } from 'vuex'
-import TopNav from './components/TopNav.vue'
+  import {mapState, mapMutations} from 'vuex'
+  import TopNav from './components/TopNav.vue'
 
-export default {
-  name: 'app',
-  components: {
-    TopNav
-  },
-  computed: {
-    ...mapState(['snackbar'])
-  },
-  methods: {
-    ...mapMutations(['updateSnackbar'])
+  export default {
+    name: 'app',
+    metaInfo: {
+      title: "Dima's BarberShop Mallorca!",
+      titleTemplate: "%s | Dima's BarberShop Mallorca!",
+      htmlAttrs: {
+        lang: 'en',
+        amp: true
+      },
+      meta: [{
+        vmid: 'Hair And Beard Mallorca',
+        name: "Dima's.barberShop",
+        content: 'Barber Shop Mallorca',
+      }]
+
+    },
+    components: {
+      TopNav
+    },
+    computed: {
+      ...mapState(['snackbar'])
+    },
+    methods: {
+      ...mapMutations(['updateSnackbar'])
+    }
   }
-}
 </script>

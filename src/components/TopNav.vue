@@ -1,7 +1,11 @@
 <template>
   <div>
-    <v-app-bar>
-      <v-toolbar-title>Awesome Shop</v-toolbar-title>
+    <v-app-bar src="../assets/images/wood_header.jpg">
+      <v-toolbar-title>
+        <v-btn text to="/">
+          <v-img contain class="sm-mt-2" src="../favicon.jpg" height="50" width="50"/>
+        </v-btn>
+      </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -16,15 +20,15 @@
 
       <!-- desktop & tablet menu -->
       <v-toolbar-items class="hidden-xs-only">
-        <v-btn to="/" text>
-          <v-icon>mdi-home</v-icon>
+        <v-btn to="/" text color="white">
+          <v-icon>mdi-content-cut</v-icon>
           Home
         </v-btn>
-        <v-btn to="store" text>
+        <v-btn to="store" text color="white">
           <v-icon>mdi-store</v-icon>
           Store
         </v-btn>
-        <v-btn to="cart" text>
+        <v-btn to="cart" text color="white">
           <v-icon>mdi-cart</v-icon>
           Cart
         </v-btn>
@@ -58,16 +62,16 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      drawer: false,
-      items: [
-        { title: 'Home', link: '/', icon: 'home' },
-        { title: 'Store', link: 'store', icon: 'store' },
-        { title: 'Cart', link: 'cart', icon: 'cart' }
-      ]
+  export default {
+    data() {
+      return {
+        drawer: false,
+        items: [
+          {title: 'Home', link: '/', icon: 'home'},
+          {title: 'Store', link: 'store', icon: 'store'},
+          {title: 'Cart', link: 'cart', icon: 'cart'}
+        ]
+      }
     }
   }
-}
 </script>

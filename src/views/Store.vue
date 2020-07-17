@@ -16,6 +16,9 @@ import Sidebar from '@/components/store/Sidebar.vue'
 import ProductDisplay from '@/components/store/ProductDisplay.vue'
 
 export default {
+  metaInfo: {
+    title: 'Store'
+  },
   components: {
     Sidebar,
     ProductDisplay
