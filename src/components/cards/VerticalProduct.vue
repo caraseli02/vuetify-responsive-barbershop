@@ -12,7 +12,7 @@
     </v-card-title>
 
     <v-card-subtitle>
-      ${{ product.price }}
+      ${{ product.price }}product-1
     </v-card-subtitle>
 
     <v-card-actions>
