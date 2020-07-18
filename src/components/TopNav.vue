@@ -10,14 +10,45 @@
       <v-spacer></v-spacer>
 
       <!-- mobile menu button -->
-      <span class="hidden-sm-and-up">
-        <v-btn
-          @click.stop="drawer = !drawer"
-        >
-          Menu
-        </v-btn>
-      </span>
 
+      <v-row class="hidden-sm-and-up" align="center" justify="center">
+
+          <v-row justify="center">
+            <v-btn
+              color="orange lighten-2"
+              class=""
+              @click="overlay = !overlay"
+            >
+              Menu
+            </v-btn>
+
+            <v-overlay
+              :absolute="absolute"
+              :opacity="opacity"
+              :value="overlay"
+            >
+              <v-btn to="/" text color="white">
+                <v-icon>mdi-content-cut</v-icon>
+                Home
+              </v-btn>
+              <v-btn to="store" text color="white">
+                <v-icon>mdi-store</v-icon>
+                Store
+              </v-btn>
+              <v-btn to="cart" text color="white">
+                <v-icon>mdi-cart</v-icon>
+                Cart
+              </v-btn>
+              <v-btn
+                color="orange lighten-2"
+                @click="overlay = false"
+              >
+                <v-icon>mdi-close</v-icon>
+              </v-btn>
+            </v-overlay>
+          </v-row>
+
+      </v-row>
       <!-- desktop & tablet menu -->
       <v-toolbar-items class="hidden-xs-only">
         <v-btn to="/" text color="white">
@@ -35,7 +66,7 @@
       </v-toolbar-items>
     </v-app-bar>
 
-    <v-navigation-drawer
+    <!--<v-navigation-drawer
       v-model="drawer"
       absolute
       temporary
@@ -57,7 +88,7 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer>
+    </v-navigation-drawer>-->
   </div>
 </template>
 
@@ -65,6 +96,9 @@
   export default {
     data() {
       return {
+        absolute: true,
+        opacity: 1,
+        overlay: false,
         drawer: false,
         items: [
           {title: 'Home', link: '/', icon: 'home'},
