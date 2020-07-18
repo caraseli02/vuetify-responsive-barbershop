@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar src="../assets/images/wood_header.jpg">
+    <v-app-bar fixed src="../assets/images/wood_header.jpg">
       <v-toolbar-title>
         <v-btn text to="/">
           <v-img contain class="sm-mt-2" src="../favicon.jpg" height="50" width="50"/>
@@ -32,8 +32,6 @@
           <v-icon>mdi-cart</v-icon>
           Cart
         </v-btn>
-      </v-toolbar-items>
-      <div>
         <v-btn href="https://wa.me/+34615729023" text color="white">
           <v-icon>mdi-whatsapp</v-icon>
 
@@ -42,7 +40,7 @@
           <v-icon>mdi-gmail</v-icon>
 
         </v-btn>
-      </div>
+      </v-toolbar-items>
     </v-app-bar>
 
     <v-navigation-drawer

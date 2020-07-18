@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="mt-12">
     <v-row>
       <v-col sm="4" offset-sm="2" xl="4" offset-xl="2">
         <ProductList />

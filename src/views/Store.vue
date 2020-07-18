@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="mt-12">
     <v-row>
       <v-col sm="3" offset-lg="1">
         <Sidebar />
