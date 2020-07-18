@@ -1,5 +1,13 @@
 <template>
   <v-app>
+    <div class="contact">
+      <v-btn href="https://wa.me/+34615729023" text color="green">
+        <v-icon large>mdi-whatsapp</v-icon>
+      </v-btn>
+      <v-btn href="mailto:dima.barbershop1@gmail.com" text color="red">
+        <v-icon large>mdi-gmail</v-icon>
+      </v-btn>
+    </div>
     <TopNav/>
     <v-content>
       <router-view></router-view>
@@ -55,3 +63,12 @@
     }
   }
 </script>
+
+<style scoped>
+  .contact {
+    position: fixed;
+    z-index: 99;
+    top: 70px;
+    right: 30px;
+  }
+</style>
