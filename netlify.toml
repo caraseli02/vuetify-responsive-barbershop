@@ -1,0 +1,4 @@
+[build]
+  Command = "vue-cli-service build"
+  Functions = "lambda"
+  Publish = "dist"
