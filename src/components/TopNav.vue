@@ -33,6 +33,16 @@
           Cart
         </v-btn>
       </v-toolbar-items>
+      <div>
+        <v-btn href="https://wa.me/+34615729023" text color="white">
+          <v-icon>mdi-whatsapp</v-icon>
+
+        </v-btn>
+        <v-btn href="mailto:dima.barbershop1@gmail.com" text color="white">
+          <v-icon>mdi-gmail</v-icon>
+
+        </v-btn>
+      </div>
     </v-app-bar>
 
     <v-navigation-drawer
