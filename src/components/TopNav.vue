@@ -2,8 +2,8 @@
   <div>
     <v-app-bar fixed src="../assets/images/wood_header.jpg">
       <v-toolbar-title>
-        <v-btn text to="/">
-          <v-img contain class="sm-mt-2" src="../favicon.jpg" height="50" width="50"/>
+        <v-btn text to="/" color="white">
+          BarberShop
         </v-btn>
       </v-toolbar-title>
 

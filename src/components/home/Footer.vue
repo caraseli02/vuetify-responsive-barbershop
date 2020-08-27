@@ -26,7 +26,7 @@
       </v-card-title>
 
       <v-card-text class="py-2 white--text text-center brown darken-3">
-        {{ new Date().getFullYear() }} — <strong>Dima's BarberShop</strong>
+        {{ new Date().getFullYear() }} — <strong>BarberShop</strong>
       </v-card-text>
     </v-card>
   </v-footer>
